@@ -22,6 +22,7 @@
             margin-top: 16px;
         }
         p {
+            font-family: 'Poppins', sans-serif;
             font-size: 24px;
             line-height: 32px;
             color: #f8f8f8;
@@ -40,7 +41,7 @@
     .main-content {
         display: flex;
         flex-direction: column;
-        //width: 100%;
+        width: 100%;
         width: 320px;
         align-items: center;
         text-align: center;
@@ -55,12 +56,12 @@
         }
         form {
             input {
+
                 text-align: center;
                 height: 50px;
                 border-radius: 9px;
-                padding: 0 16px;
+                padding: 0;
                 background: #fff;
-                
                 border: 1px solid rgb(77, 77, 77);
             }
             button {
@@ -76,7 +77,7 @@
             }
         }
         button,
-        input {
+        input{
             width: 100%;
         }
     }

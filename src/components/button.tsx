@@ -1,3 +1,4 @@
+//possibilita atribuir qualquer atributo de HTML 
 import { ButtonHTMLAttributes } from 'react';
 import '../styles/button.scss'
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
