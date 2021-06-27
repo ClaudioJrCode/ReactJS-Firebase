@@ -68,6 +68,3 @@ export function Home(){
     )
 }
 
-function useAuth(): { user: any; signInWithGoogle: any } {
-    throw new Error('Function not implemented.')
-}

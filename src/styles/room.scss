@@ -11,12 +11,29 @@
             > img {
                 max-height: 40px;
             }
+            >div{
+                display:flex;
+                gap:16px;
+                button{
+                    box-shadow: none;
+                    color: #7651e4;
+                    background-color: #FFF;
+                    height: 40px;
+                    font-weight: 300;
+                    font-size: 18px;
+                }
+            }
+            
         }
 
     }
     main{
         max-width: 800px;
         margin: 0 auto;
+        .questions-list{
+            margin-top:32px;
+
+        }
 
         .room-title {
             margin: 32px 0 24px 0;
@@ -50,8 +67,6 @@
                 resize: vertical;
                 min-height: 150px
             }
-
-
             .form-footer{
                 display: flex;
                 justify-content: space-between;
@@ -61,20 +76,20 @@
                     display: flex;
                     align-items: center;
 
-                    img{
+                    >img{
                         width:40px;
                         height:40px;
                         border-radius: 50%;
                     }
 
-                    span{
+                    >span{
                         margin-left: 8px;
                         color: #29292e;
                         font-weight: 500;
                     }
                 }
                 >span{
-                    font-size: 14px;
+                    font-size: 10px;
                     color: #737388;
                     font-weight: 500;
 
