@@ -50,7 +50,7 @@ export function useRoom(roomId: string) {
                     isHighlighted: value.isHighlighted,
                     isAnswered: value.isAnswered,
                     likeCount: Object.values(value.likes ?? {}).length,
-                    likeId: Object.entries(value.likes ?? {}).find(([key,like]) => like.authorId === user?.id)?.[0]
+                    likeId: Object.entries(value.likes ?? {}).find(([key,like]) => like.authorId === user?.id)?.[0],
                 }
             })
             setTitle(databaseRoom.title)
@@ -61,7 +61,7 @@ export function useRoom(roomId: string) {
             roomRef.off('value');
         }
 
-    }, [roomId])
+    }, [roomId, user?.id])
     return { questions, title }
 }
 
